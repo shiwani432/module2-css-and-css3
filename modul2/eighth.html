@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .one {
+            width: 90%;
+            height: 610px;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            color: white;
+            background-color: white;
+        }
+
+        .two {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .three {
+            width: 30%;
+            height: 35px;
+            background-color: rgb(12, 0, 37);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .four {
+            width: 70%;
+            height: 35px;
+            background-color: rgba(255, 28, 28, 0.801);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fifth {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(4, 112, 253);
+        }
+
+        .six {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+           }
+        
+        
+
+        .fist {
+            width: 50%;
+            height: 200px;
+            background-color: rgb(17, 1, 70);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+
+     .seven {
+            height: 100px;
+            padding: 50px 80px;
+            background-color: rgb(73, 156, 128);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ima1 {
+            height: 100px;
+            background-color: rgb(145, 231, 231);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+
+        .fist1 {
+            height: 13%;
+            background-color: rgba(248, 208, 6, 0.795);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+
+
+        @media (max-width: 768px) {
+            .one{
+                height: 800px;
+                position: relative;
+             }
+            .two{
+                flex-direction: column;
+             }
+            .three{
+                width: 100%;
+                
+             }
+            .four{
+                position: absolute;
+                width: 200px;
+                height: 400px;
+                top: 44.4%;
+                left: 0;
+             }
+            .fifth {
+                height: 40%;
+             }
+            .ima1{
+                width: 160px;
+                position: absolute;
+                top:81.9% ;
+                left: 75.5%;
+               }
+
+          .seven{
+                width: 300px;
+                position: absolute; 
+                top: 82%;
+                left: 200px;
+              }
+            .fist{
+                width: 460px;
+                position: absolute;
+                top: 44.5%;
+                left: 30.2%;
+             }
+
+            .fist1{
+                width: 460px;
+                position: absolute;
+                top: 69%;
+                left: 30.2%;
+             }
+
+
+        }
+
+        @media (max-width: 480px) {
+            .one{
+                height: 700px;
+             }
+            .two{
+                
+             }
+            .three{
+                
+             }
+            .four{
+                width: 100%;
+                height: 70px;
+                position: static;
+              }
+            .fifth {
+                height: 200px;
+            }
+            .ima1{
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top:86% ;
+            }
+            .seven{
+                width: 100%;
+                position: absolute;
+                top:73.6% ;
+                left: 0;
+            }
+            .fist{
+                width: 100%;
+                height: 110px;
+                position: static;
+            }
+            .fist1{
+                width: 100%;
+                height: 100px;
+                position: static;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <div class="two">
+            <header class="three">HEADER</header>
+            <nav class="four">MENU</nav>
+        </div>
+        <section class="fifth">HERO</section>
+        <div class="six">
+            <section class="fist">MAIN</section>
+            <div class="main">
+                <aside class="ima1">IMAGE</aside>
+                <aside class="seven">EXTRA</aside>
+            </div>
+        </div>
+        <footer class="fist1">BANNER</footer>
+    </div>
+</body>
+
+</html>

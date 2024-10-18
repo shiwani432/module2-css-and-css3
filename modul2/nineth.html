@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="">
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+nav {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+ }
+
+.logo {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+.nav-two>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+ }
+
+.nav-two>ul>li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.nav-two>ul>li>a {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.614);
+}
+
+.nav-three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.nav-three>button {
+    width: 165px;
+    height: 45px;
+    gap: 0px;
+    border-radius: 4px;
+    background: #ECE5FF;
+    border: none;
+    color: #794CFF;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.start-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.save90 {
+    width: 100px;
+    height: 28px;
+    border-radius: 100px;
+    background: #81C43B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3;
+
+}
+
+.get {
+    width: 180px;
+    height: 28px;
+    position: absolute;
+    left: 30px;
+    border-radius: 0px 100px 100px 0px;
+    background: #F2F9EB;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 15px;
+    z-index: 1;
+}
+
+.start-two>h1 {
+    width: 615px;
+    font-size: 60px;
+    text-align: center;
+}
+
+
+.start-three {
+    width: 480px;
+    text-align: center;
+    font-size: 18px;
+}
+
+start-four {
+    display: flex;
+}
+
+.start-four>input {
+    width: 300px;
+    height: 45px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-left: 15px;
+}
+
+.start-four>input::placeholder {
+    color: #97A5B5;
+}
+
+.start-four>button {
+    width: 158px;
+    height: 45px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background: #794CFF;
+    color: white;
+}
+
+.start img{
+    width: 920px;
+    height: 654.29px;
+}
+.cmp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 20vh;
+}
+
+.team-logo {
+    display: flex;
+    gap: 180px;
+}
+
+
+.team-logo .slack {
+    width: 80px;
+    height: 20.24px;
+    background-image: url(msj.webp);
+}
+
+.end {
+    width: auto;
+    height: auto;
+    background-color: #F0EBFA;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list {
+    width: 506px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 155px;
+    gap: 14px;
+}
+
+.list-1 strong {
+    font-size: 20px;
+}
+
+.list-1 p {
+    color: #4E5A65;
+}
+
+.list-1 {
+    width: 107%;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 16px;
+    gap: 10px;
+}
+
+.select {
+    background-color: #e0d8f9;
+    border-left: 10px solid #794CFF;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+hr {
+    width: 107%;
+    opacity: 0.2;
+}
+
+.boxes {
+    width: 750px;
+    height: 489px;
+    position: relative;
+}
+
+.box1 {
+    width: 57%;
+    height: 85%;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.box1 b {
+    width: 100%;
+    height: 59px;
+    font-size: 24px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.symbole {
+    width: 15%;
+    height: 86%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: end;
+}
+
+.msgicon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDF8E8;
+}
+
+
+   
+
+
+.line {
+    width: 2px;
+    height: 203px;
+    position: absolute;
+    top: 115px;
+    left: 10.1%;
+    opacity: 0.2;
+    background-color: black;
+}
+
+.line2 {
+    width: 2px;
+    height: 51px;
+    position: absolute;
+    top: 91%;
+    left: 10.1%;
+    opacity: 0.2;
+    background-color: black;
+}
+
+.symble2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5F8ED;
+    margin-top: 100px;
+}
+
+
+.h-list {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    padding-left: 13px;
+}
+
+.h-list>span {
+    font-size: 20px;
+}
+
+.h-list>.denise {
+    width: 84%;
+    border: 2px solid #0000005c;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 8px 0px;
+    font-size: 19px;
+}
+
+.box2 {
+    width: 416px;
+    height: 362px;
+    background-color: white;
+    position: absolute;
+    top: 26%;
+    left: 44.6%;
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+
+.profail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-msg {
+    width: 100%;
+    height: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.336);
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.468);
+}
+
+.btnlast {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.box2 button {
+    width: 90px;
+    height: 42px;
+    background-color: #3B7FF6;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+.start-four {
+    display: flex;
+}
+
+.group{
+    display: none;
+}
+
+
+
+@media only screen and (max-width:600px) {
+
+    .nav-two {
+        display: none;
+        
+    }
+
+    .start img{
+        width: 100%;
+        height: 420px;
+    }
+
+    .nav-three {
+        display: none;
+    }
+
+    .group-img {
+        width: 32px;
+        height: 21px;
+        background: url(/Group31.png);
+        background-size: 32px;
+    }
+
+    .group span {
+
+        font-size: 10px;
+
+    }
+
+    .group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav {
+        gap: 350px;
+    }
+
+    .save90 {
+        display: none;
+    }
+
+    .get {
+        border-radius: 100px;
+        position: static;
+        font-size: 20px;
+        width: 220px;
+        height: 39px;
+    }
+
+    .start-one {
+        margin-right: 0;
+    }
+
+    .start-two>h1 {
+        width: 473px;
+    }
+
+    .start-three {
+        width: 430px;
+        font-size: 30px;
+        color: #0000008f;
+    }
+
+    .start-four {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .start-four>input {
+        width: 399px;
+        height: 60px;
+        text-align: center;
+    }
+
+    .start-four>input::placeholder {
+        font-size: 20px;
+    }
+
+    .start-four>button {
+        width: 399px;
+        height: 60px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .start .data1 {
+        width: 300px;
+        height: 400px;
+        background-size: 400px;
+    }
+    .team-logo {
+        gap: 50px;
+    }
+    .team-logo .slack{
+        display: none;
+    }
+    .end{
+        
+            display: none;
+        
+    }
+   
+}
+</style>
+
+<body>
+    <dvi class="main">
+        <nav>
+            <div class="nav-one">
+                <div class="logo">team.flow</div>
+            </div>
+            <div class="nav-two">
+                <ul>
+                    <li><a href="">How it Works</a><i class="fa-solid fa-angle-down"></i></li>
+                    <li><a href="">Product</a><i class="fa-solid fa-angle-down"></i></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Resources</a><i class="fa-solid fa-angle-down"></i></li>
+                </ul>
+            </div>
+            <div class="nav-three">
+                <div class="login">Log in</div>
+                <button>Get started free</button>
+            </div>
+            <div class="group">
+                <div class="group-img"></div>
+                <span>MENU</span>
+            </div>
+        </nav>
+        <div class="start">
+            <div class="start-one">
+                <div class="save90">Save90%</div>
+                <div class="get">Get account of $59 &gt;</div>
+            </div>
+            <div class="start-two">
+                <h1>Manage the team everyone wants to be on</h1>
+            </div>
+            <div class="start-three">
+                <p>Simple platform that lets you master what great managers do best, as develop trust, collaborate, and
+                    drive team performance.</p>
+            </div>
+            <div class="start-four">
+                <input type="text" placeholder="name@yourcompany.com">
+                <button>Try it free</button>
+            </div>
+            <div class="data1" ><img src="graf.png"></div>
+            <div class="cmp">
+                <p>TRUSTED BY OVER <b>10,000+</b> WORLD'S BEST TEAMS</p>
+                <div class="team-logo">
+                    <div class="google"><img src="google-2015a 1.png" style=" width: 80px;height: 25px;"></div>
+                    <div class="airbnb"><img src="airbnb 1.png" style=" width: 80px;height: 25px;"></div>
+                    <div class="facebook"><img src="Group (1).png" style=" width: 80px;height: 25px;"></div>
+                    <div class="hubspot"><img src="hubspot 1.png" style=" width: 80px;height: 25px;"></div>
+                 
+                </div>
+            </div>
+        </div>
+        <div class="end">
+            <div class="boxes">
+                <div class="box1">
+                    <strong>Timeline</strong>
+                    <div class="symbole">
+                        <div class="msgicon">
+                            <div class="mag-mainimg"><img src="msj.webp " style=" width: 20px; height: 20px; background-size: 18px;"></div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="symble2">
+                            <div class="wtcha"><img src="time.png" style=" width: 18px;height: 18px; background-size: 18px; margin-top: 100px;"> </div>
+                        </div>
+                        <div class="line2"></div>
+                    </div>
+                    <div class="h-list">
+                        <span>Benchmarking</span>
+                        <p>sent to Denise on 06/02/2020</p>
+                        <div class="denise"><span style="color: blue;">@Denise</span> Can we add three more analyses?
+                        </div>
+                        <div class="denise"><span style="color: blue;">@Denise</span> Can we add three more analyses?
+                        </div>
+                        <div class="denise"><span style="color: blue;">@Denise</span> Can we add three more analyses?
+                        </div>
+                        <span>Meeting reminder</span>
+                        <p>sent to Denise on 06/02/2020</p>
+                        <div class="denise"><span style="color: blue;">@Denise</span> Can we add three more analyses?
+                        </div>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div class="profail">
+                        <div class="ph"><img src="man8.jfif" style=" width: 36px;height: 37px;background-size: 37px; border-radius: 50%;"></div>
+                        <div class="name">
+                            <strong style="font-size: 20px; ">Denise Silva</strong>
+                            <div>Product Designer</div>
+                        </div>
+                    </div>
+                    <div class="email-msg">
+                        <span style="color: blue;">@Peter</span> Thanks for review! <br> I will review the comments and
+                        submit a <br> new project.
+                    </div>
+                    <div class="btnlast">
+                        <button>Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="list-1 select">
+                    <strong>Survey team</strong>
+                    <p>Powerful questions that get to the heart of how team members really feel.</p>
+                </div>
+                <hr>
+                <div class="list-1 ">
+                    <strong>Resolve issues quickly</strong>
+                    <p>Anonymous messaging that connects mangers and employees.</p>
+                </div>
+                <hr>
+                <div class="list-1">
+                    <strong>Plan your 1-on-1s</strong>
+                    <p>Plan meetings together and give a stake employees and teams.</p>
+                </div>
+                <hr>
+                <div class="list-1">
+                    <strong>Track your progress</strong>
+                    <p>Easy-to-read reports and sharable results help managers and teams.</p>
+                </div>
+            </div>
+        </div>
+    </dvi>
+</body>
+
+</html>
